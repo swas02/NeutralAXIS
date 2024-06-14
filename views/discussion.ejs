@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeutralAXIS | <%= discussion.title %></title>
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="/assets/style.min.css">
+</head>
+
+<body class="docs-page" data-bs-spy="scroll" data-bs-target="#docs-nav" data-bs-root-margin="-100px 0px -40%">
+  <!-- header  -->
+  <%- include('header') %>
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar glassEffect">
+      <%# <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input placeholder="Search the docs..." name="search" class="form-control search-input">
+          <button type="submit" class="btn search-btn" value="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div> %>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto" href="#section-1">Table of content</a>
+            <ul class="nav flex-column mt-2 lvl2">
+              <% idArray.forEach(e => { %>
+              <li class="nav-item"><a class="nav-link scrollto" href="#<%= e[0] %>"><%= e[1] %></a></li>
+              <% }) %>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading"><%= discussion.title %></h1>
+            <section class="docs-intro">
+              <%- doc.body.innerHTML %>
+            </section>
+            <div class="container">
+              <div class="row justify-content-center">
+
+                <div class="alert alert-info">
+                  <h4 class="alert-heading"><%= discussion.title %></h4>
+                  <p>
+                    Category: <%= discussion.category.name %><br>
+                    Updated: <%= new Date(discussion.updatedAt).toLocaleString().replace(',',' @') %> <br>
+                    Author: <a class="link-primary  link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="<%= discussion.author.url %>">@<%= discussion.author.login %></p></a>
+                  <hr>
+
+                  <p>Feel free to ask us any questions on GitHub! </p>
+                  <a href="<%= discussion.url  %>" class="mx-auto btn btn-primary">Open GitHub.</a>
+
+                </div>
+
+              </div>
+            </div>
+            <footer class="footer">
+              <div class="container text-center py-5">
+                <small class="copyright">Made with ❤️ by
+                  <a class="theme-link" href="#" target="_blank">@swas02</a>
+                </small>
+              </div>
+            </footer>
+          </header>
+        </article>
+      </div>
+    </div>
+  </div>
+
+
+  <script defer src="/assets/bootstrap.bundle.min.js"></script>
+  <script defer src="/assets/script.min.js"></script>
+</body>
+
+</html>

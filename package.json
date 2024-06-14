@@ -1,0 +1,22 @@
+{
+  "name": "project-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/request": "^9.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "compromise": "^14.13.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jsdom": "^24.1.0"
+  },
+  "type": "module"
+}

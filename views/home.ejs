@@ -1,0 +1,73 @@
+<!-- home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeutralAXIS</title>
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="container mx-auto px-4" style="max-width: 940px;">
+    <% if (invalidRoute) { %>
+    <div class="align-items-center p-3 my-3 text-white bg-danger text-center rounded box-shadow">
+      <a class="navbar-brand fs-2" href="/">
+        Error 404 | <span class="logo-text bolder">Neutral<span class="text-alt">AXIS</span></span>
+      </a><br>
+      <p class="text-center">"Oops! This page seems to be lost in cyberspace. 🌐"</p>
+    </div>
+    <hr>
+    
+    <% } else { %>
+
+      <div class="align-items-center p-3 my-3 text-white bg-primary text-center rounded box-shadow">
+        <p class="fs-2 bolder" href="/">
+          Greetings!👋 Welcome to <span class="logo-text bolder navbar-brand">Neutral<span class="text-alt">AXIS</span></span>
+        </p>
+        <p class="text-center">"From skyscrapers to underground tunnels, let's dig into the talk of the town! 🌆🚇🌐"</p>
+      </div>
+    <% } %>
+
+
+
+
+    <div class="card container border-primary py-3 my-3 ">
+      <h2 class="fw-bold text-center text-decoration-underline">Topics</h2>
+      <div class="d-flex flex-wrap rounded justify-content-center">
+
+        <% discussions.forEach(discussion=> { %>
+        <% if (discussion.category.name=='Announcements' ) { %>
+        <div class="m-1 rounded  bg-primary">
+          <a class="fs-5 text-white px-2 py-1 my-2 text-left link-underline" href="/p/<%= discussion.id %>/">
+            <%= discussion.title %>
+          </a>
+        </div>
+        <% } %>
+        <% }) %>
+      </div>
+    </div>
+
+
+    <div class="my-3 mx-auto card bg-warning text-dark text-center py-3">
+
+      <h5>Come join us on GitHub</h5>
+      <hr>
+      <p>Report any issues 🐛, ask questions ❓, and engage in discussions 💬!</p>
+      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Email address</label>
+        <a href="https://github.com/orgs/Temporary-org-project/discussions" class="mx-auto btn btn-light" type="button">🌟Star on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
