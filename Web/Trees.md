@@ -35,7 +35,7 @@ Conservation initiatives include:
 - **Protected Areas**: Establishing nature reserves and national parks to safeguard tree species and habitats.
 - **Community Engagement**: Educating communities about the importance of trees and promoting sustainable practices.
 
-![Forest](https://example.com/forest.jpg)
+![Forest](https://images.unsplash.com/photo-1448375240586-882707db888b)
 *Image: A lush forest demonstrating the beauty and diversity of trees.*
 
 ## Conclusion
