@@ -28,8 +28,7 @@ Staircases can be constructed from various materials:
 
 The dimensions of a staircase can be calculated using the following formula:
 $\ N = \frac{2h + t}{r}$
-%%\sum_{i=1}^\infty\frac{1}{n^2}
-=\frac{\pi^2}{6}%%
+<math xmlns=http://www.w3.org/1998/Math/MathML><mrow><mi>cos</mi><mo>⁡</mo><mo>(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>)</mo></mrow></math>
 
 Where:
 - \( N \) = Number of risers
