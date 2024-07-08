@@ -1,1 +1,64 @@
-<!doctypehtml><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>NeutralAXIS</title><link href=style.css rel=stylesheet><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><link href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css rel=stylesheet crossorigin=anonymous integrity=sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+><script src=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js crossorigin=anonymous defer integrity=sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg></script><script src=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js crossorigin=anonymous defer integrity=sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk onload=renderMathInElement(document.body)></script><style>:root{--background-color:#222222;--text-color:#CCCCCC;--accent-color:#6C5DD3;--brand-color:#FFA500;--heading-color:#FFFFFF;--scrollbar-thumb-color:#424242;--scrollbar-track-color:#686868;--border-color:#333333;--link-color:#6CB2EB}body,html{height:100vh;max-width:100%;overflow:hidden;font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:var(--background-color);color:var(--text-color);scroll-behavior:smooth}a{color:var(--link-color)}h1,h2,h3,h4,h5,h6{color:var(--heading-color)}.container{display:grid;grid-template-columns:300px 1fr}.container-col{display:flex;flex-direction:column;height:100vh}.row{height:auto;display:flex}.col{flex:1}.border-bottom{border-bottom:2px solid var(--border-color)}.border-right{border-right:2px solid var(--border-color)}.remaining-height{overflow:auto;flex:1}.content{padding:12px}.main{margin:0 auto;max-width:840px}.brand{color:var(--brand-color);font-size:20px;font-weight:600}::-webkit-scrollbar{width:12px}::-webkit-scrollbar-thumb{background-color:var(--scrollbar-thumb-color)}::-webkit-scrollbar-track{background-color:var(--scrollbar-track-color)}ul.outline{list-style:none;padding:0}.hideme{display:none}ul.outline li{margin-bottom:10px;margin:10px}ul.outline li a{text-decoration:none;color:var(--text-color);transition:color .3s ease}ul.outline li a:hover{color:var(--brand-color)}button{background:var(--background-color);color:var(--scrollbar-track-color);border:0;box-shadow:none;padding:12px;font-size:16px;text-align:left}.active{border-bottom:1px solid var(--text-color);color:var(--text-color)}.right{float:right;justify-content:space-between;padding:auto 20px}.hide-d{display:none}.brand{position:relative;width:100%}.brand::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background-image:linear-gradient(to right,rgba(0,187,104,.5) 0,rgba(0,187,104,.75) 50%,rgba(255,215,0,1) 100%)}img{max-width:100%}@media (max-width:839px){body,html{height:auto;overflow-y:auto;overflow-x:hidden}.container{display:grid;grid-template-columns:1fr}.hide-m{display:none}.border-right{border-right:0 solid var(--border-color)}.hide-d{display:block}.sticky{position:fixed;padding:5px;padding-top:10px;width:35px;height:30px;text-align:center;left:calc(100vw - 65px);top:6px;border-radius:30px;border:1px solid var(--scrollbar-track-color);cursor:pointer;background:rgba(0,0,0,.2);backdrop-filter:blur(10px);z-index:10}.container{display:block}.container-col{height:fit-content}}.hide{display:none}</style><div class="hide-d sticky"id=menu>☰</div><div class=container><div class="container-col border-right hide-m"id=leftColumn><div class="row border-bottom colorful-border"><div class="content brand">NeutralAXIS</div></div><div class="row border-bottom"><button class="col active"name=home>Home</button> <button class=col name=content>Content</button></div><div class="row remaining-height"><div class="hideme home"id=home><ul class=outline id=allFilesList></ul></div><div class="content hideme"id=content><ul class=outline></ul></div></div></div><div class=container-col><div class="content brand border-bottom hide-d">NeutralAXIS</div><div class="row remaining-height"><div class="error hide">Error</div><div class="content main"id=main><header style=padding-top:50px><h1>Welcome to NeutralAXIS</h1><p>"From skyscrapers to underground tunnels, let's dig into the talk of the town! 🌆🚇🌐"</header><section><h2>About</h2><p>NeutralAXIS is your hub for discussions on urban development, infrastructure, and global connectivity.</section><section><h2>Mission</h2><p>Our mission is to explore and engage in conversations about the future of cities, from towering skyscrapers that redefine skylines to intricate underground tunnels that connect communities.</section><section><h2>Join us on GitHub</h2><p>Report any issues 🐛, ask questions ❓, and engage in discussions 💬!<p>Email address 🌟Star on GitHub</section><hr><footer class=footer>© 2024 NeutralAXIS. All rights reserved.</footer></div></div></div></div><script defer>function fetchData(r,e){return fetch(r).then(r=>{if(!r.ok)throw 403===r.status?new Error("API rate limit exceeded"):new Error("Failed to fetch data");return r.json()}).catch(t=>{if("API rate limit exceeded"===t.message&&e)return fetch(e+encodeURIComponent(r)).then(r=>{if(!r.ok)throw new Error("Failed to fetch data via proxy");return r.json()}).catch(r=>{throw new Error("Error fetching data via proxy: "+r.message)});throw new Error("Error: "+t.message)})}function fetchMarkdown(r){return fetch(r).then(r=>{if(!r.ok)throw new Error("Network response was not ok");return r.text()}).then(r=>{parseMarkdownToHTML(r)}).catch(r=>{throw new Error("Fetch error: "+r.message)})}const repoUrl="https://api.github.com/repos/swas02/NeutralAXIS/contents/Web",rawUrl="https://raw.githubusercontent.com/swas02/NeutralAXIS/main/",proxyUrl="https://api.allorigins.win/raw?url=";fetchData(repoUrl,proxyUrl).then(r=>{populateHomeSection(r),console.log(r)}).catch(r=>{console.error(r.message)});</script><script defer>function populateHomeSection(e){function t(e){return e.charAt(0).toUpperCase()+e.slice(1).replace("_"," ")}function n(e){const t=document.createElement("ul");return t.setAttribute("data-folder",e),t}const o=document.getElementById("home"),c=e.filter(e=>e.name.endsWith(".md")&&"file"===e.type);c.forEach(e=>{const c=e.name.replace(".md",""),r=e.path.split("/")[0],i=document.createElement("li"),a=document.createElement("a");a.textContent=t(c),a.href=`${window.location.origin}?view=${r}/${e.name}`,a.addEventListener("click",function(e){e.preventDefault(),window.history.pushState({},"",a.href)}),i.appendChild(a);const l=o.querySelector(`ul[data-folder="${r}"]`);if(l)l.appendChild(i);else{n(r);o.querySelector("ul#allFilesList").appendChild(i)}}),o.classList.contains("hideme")&&o.classList.remove("hideme")}function configure(){createDynamicNavigation(),document.querySelector('button[name="content"]').click(),renderMathInElement(document.body),document.querySelectorAll(".outline a").forEach(e=>{e.addEventListener("click",e=>{console.log(e),toggleMenu()})})}function parseMarkdownToHTML(e){if("string"==typeof e&&""!==e.trim())try{var t=marked.parse(e);document.getElementById("main").innerHTML=t,setTimeout(configure,100)}catch(e){console.error("Error parsing Markdown:",e),alert("An error occurred while processing Markdown content. Please try again.")}else console.error("Input data is empty or not a valid string.")}function createDynamicNavigation(){function e(){return"id"+Math.random().toString(36).substr(2,9)}const t=document.querySelector("#main").querySelectorAll("h2"),n=document.querySelector("#content>ul.outline");n.innerHTML="",t.forEach(t=>{const o=e();t.setAttribute("id",o);const c=document.createElement("li"),r=document.createElement("a");r.textContent=t.textContent,r.href="#"+o,c.appendChild(r),n.appendChild(c)})}const toggleMenu=()=>{const e=document.getElementById("menu"),t=document.querySelectorAll(".container-col");t.forEach(function(e){e.classList.toggle("hide-m")}),"☰"===e.textContent?e.textContent="△":e.textContent="☰"};document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("menu");document.querySelectorAll(".container-col");e.addEventListener("click",toggleMenu)});const homeSection=document.getElementById("home");document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector('button[name="home"]'),t=document.querySelector('button[name="content"]'),n=document.getElementById("home"),o=document.getElementById("content");e.addEventListener("click",function(){e.classList.add("active"),t.classList.remove("active"),n.style.display="block",o.style.display="none"}),t.addEventListener("click",function(){t.classList.add("active"),e.classList.remove("active"),o.style.display="block",n.style.display="none"})}),document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("allFilesList");e&&e.addEventListener("click",function(e){const t=e.target;if("A"===t.tagName){let e=t.getAttribute("href");const n=new URL(e).searchParams.get("view");fetchMarkdown(rawUrl+n)}})}),createDynamicNavigation();</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NeutralAXIS</title>
+  <link rel="stylesheet" href="./style.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+  <div class="hide-d sticky" id="menu">☰</div>
+  <div class="container">
+    <div class="container-col hide-m border-right" id="leftColumn">
+      <div class="row border-bottom colorful-border">
+        <div class="content brand">NeutralAXIS</div>
+      </div>
+      <div class="row border-bottom"><button class="col active" name="home">Home</button> <button class="col" name="content">Content</button></div>
+      <div class="row remaining-height">
+        <div class="home hideme" id="home">
+          <ul class="outline" id="allFilesList"></ul>
+        </div>
+        <div class="content hideme" id="content">
+          <ul class="outline"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-col">
+      <div class="content brand hide-d border-bottom">NeutralAXIS</div>
+      <div class="row remaining-height">
+        <div class="error hide">Error</div>
+        <div class="content main" id="main">
+          <header style="padding-top:50px">
+            <h1>Welcome to NeutralAXIS</h1>
+            <p>"From skyscrapers to underground tunnels, let's dig into the talk of the town! 🌆🚇🌐"</p>
+          </header>
+          <section>
+            <h2>About</h2>
+            <p>NeutralAXIS is your hub for discussions on urban development, infrastructure, and global connectivity.</p>
+          </section>
+          <section>
+            <h2>Mission</h2>
+            <p>Our mission is to explore and engage in conversations about the future of cities, from towering skyscrapers that redefine skylines to intricate underground tunnels that connect communities.</p>
+          </section>
+          <section>
+            <h2>Join us on GitHub</h2>
+            <p>Report any issues 🐞, ask questions ❓, and engage in discussions 💬!</p>
+            <p><a href="https://github.com/swas02/NeutralAXIS/">🌟Star on GitHub</a></p>
+          </section>
+          <hr>
+          <footer class="footer">&copy; 2024 NeutralAXIS. All rights reserved.</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer src="./githubAPI.min.js"></script>
+  <script defer src="./app.min.js" defer></script>
+</body>
+
+</html>
