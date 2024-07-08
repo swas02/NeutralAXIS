@@ -30,6 +30,8 @@ The dimensions of a staircase can be calculated using the following formula:
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
+$$ N = \frac{\left(h + t\right)}{r}$$
+
 Where:
 - \( N \) = Number of risers
 - \( h \) = Total vertical height (floor-to-floor height)
