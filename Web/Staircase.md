@@ -2,10 +2,10 @@
 
 Staircases are essential architectural elements that provide vertical access between different levels of a building. They come in various designs, materials, and configurations, each serving specific functional and aesthetic purposes.
 
-## 1Types of Staircases
+## Types of Staircases
 
 ### Straight Staircase
-The most common type, straight staircases run in a straight line from one floor to another, offering simplicity and ease of construction.
+The most common type, straight staircases run in a straight line from one floor to another, offering ==simplicity and ease of construction==.
 
 ### L-Shaped Staircase
 L-shaped staircases consist of two straight flights of stairs that form a 90-degree angle, often used when space is limited.
@@ -40,7 +40,7 @@ Where:
 
 Ensure compliance with local building codes and standards when designing staircases to ensure safety and usability.
 
-## 1Conclusion
+## Conclusion
 
 Staircases not only serve a functional purpose but also contribute significantly to the architectural and aesthetic appeal of a space. Understanding the types, materials, and dimensions of staircases helps architects and designers create safe, efficient, and visually appealing vertical circulation within buildings.
 
