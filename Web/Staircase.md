@@ -1,4 +1,4 @@
-# Staircases
+# 1Staircases
 
 Staircases are essential architectural elements that provide vertical access between different levels of a building. They come in various designs, materials, and configurations, each serving specific functional and aesthetic purposes.
 
@@ -40,7 +40,7 @@ Where:
 
 Ensure compliance with local building codes and standards when designing staircases to ensure safety and usability.
 
-# Staircases
+# 1Staircases
 
 Staircases are essential architectural elements that provide vertical access between different levels of a building. They come in various designs, materials, and configurations, each serving specific functional and aesthetic purposes.
 
