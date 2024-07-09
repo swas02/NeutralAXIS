@@ -40,7 +40,7 @@ Where:
 
 Ensure compliance with local building codes and standards when designing staircases to ensure safety and usability.
 
-## Conclusion
+## 1Conclusion
 
 Staircases not only serve a functional purpose but also contribute significantly to the architectural and aesthetic appeal of a space. Understanding the types, materials, and dimensions of staircases helps architects and designers create safe, efficient, and visually appealing vertical circulation within buildings.
 
