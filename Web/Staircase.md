@@ -2,7 +2,7 @@
 
 Staircases are essential architectural elements that provide vertical access between different levels of a building. They come in various designs, materials, and configurations, each serving specific functional and aesthetic purposes.
 
-## Types of Staircases
+## 1Types of Staircases
 
 ### Straight Staircase
 The most common type, straight staircases run in a straight line from one floor to another, offering simplicity and ease of construction.
