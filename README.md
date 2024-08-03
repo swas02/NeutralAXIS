@@ -1,6 +1,6 @@
 # NeutralAXIS
 
-Welcome to **NeutralAXIS**—a dedicated platform for structural engineers to discuss IS codes and share design guides based on the latest norms and standards. NeutralAXIS serves as a hub for professionals seeking to stay updated with current practices and standards in structural engineering. 🏗️🔧
+Welcome to **NeutralAXIS**—your dedicated platform for structural engineers to discuss IS codes and share design guides based on the latest norms and standards. Whether you're a seasoned professional or just starting out, NeutralAXIS provides a collaborative space to stay updated on best practices and emerging trends in structural engineering. 🏗️🔧
 
 ## Table of Contents
 
@@ -31,9 +31,7 @@ We invite you to contribute to our project and help improve the resources availa
 
 We welcome contributions from the structural engineering community. To contribute:
 
-1. **Fork the Repository**: Create your own copy of the repository on GitHub. 🍴
-2. **Create a Branch**: Develop your changes on a new branch. 🌿
-3. **Submit a Pull Request**: Submit a pull request for review when your changes are ready. 🔄
-
-<!--- For more detailed contribution guidelines, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file in our repository. 📜 -->
-
+1. **Visit the Web Folder**: Navigate to the `web` folder in the repository to view or modify the site's content and design files. 🗂️
+2. **Fork the Repository**: Create your own copy of the repository on GitHub. 🍴
+3. **Create a Branch**: Develop your changes on a new branch. 🌿
+4. **Submit a Pull Request**: Submit a pull request to propose your modifications or additions. 🔄
