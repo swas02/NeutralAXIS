@@ -2,7 +2,7 @@
 
 Welcome to **NeutralAXIS**—your dedicated platform for structural engineers to discuss IS codes and share design guides based on the latest norms and standards. Whether you're a seasoned professional or just starting out, NeutralAXIS provides a collaborative space to stay updated on best practices and emerging trends in structural engineering. 🏗️🔧
 
-* Please note that the data on the website is currently dummy data. We are actively working on improving the site and adding valuable content.
+_*Please note that the data on the website is currently dummy data. We are actively working on improving the site and adding valuable content._
 
 ## Table of Contents
 
